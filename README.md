@@ -1,6 +1,6 @@
 # magento2-seo
 
-This is a module for Magento 2 automatically adds open graph data.
+This is a module for Magento 2 that automatically adds open graph data.
 
 Facebook sharing looks really bad in standard magento 2 because it misses open graph data.
 
