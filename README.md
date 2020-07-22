@@ -1,22 +1,19 @@
 # magento2-seo
-Magento 2 module to automatically add open graph data
-Facebook sharing looks really bad in standard magento 2 because it misses open graph data
 
-This adds opengraph data for cats based standard magento data.
+This is module for Magento 2 automatically adds open graph data.
 
-It grabs the Seo fields and cat image and the first 10 product images and pushes them into fb open graph data
+Facebook sharing looks really bad in standard magento 2 because it misses open graph data.
 
-If you like this and it helps you consider donating here https://paypal.me/frithjofdev
+This adds open graph data for categories based on standard magento data.
 
-Install
+If you like this and it helps consider donating here https://paypal.me/frithjofdev
 
-**composer require gfe/seo:dev-master**
+## Installation
 
-Please run these commands in CLI 
+**`composer require gfe/seo:dev-master`**
 
-php bin/magento setup:upgrade
+Please run these commands in CLI after installation
 
-php bin/magento cache:flush
-
-php bin/magento setup:di:compile
-
+    php bin/magento setup:upgrade
+    php bin/magento cache:flush
+    php bin/magento setup:di:compile
