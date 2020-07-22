@@ -4,6 +4,8 @@ Facebook sharing looks really bad in standard magento 2 because it misses open g
 
 This adds opengraph data for cats based standard magento data
 
+If you like this and it helps you consider donating here https://paypal.me/frithjofdev
+
 Install
 
 **composer require gfe/seo:dev-master**
