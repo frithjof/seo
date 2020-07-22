@@ -46,18 +46,14 @@ class Category extends Template
             $ogdata[] = ['property' => 'og:description' , 'content' =>$cat->getData('description')];
         }
 
-
-        if($cat->getImageUrl())  $ogdata[] = ['property' => 'og:image' , 'content' => $cat->getImageUrl()];;
-
-
-
         $products = $this->getProductCollection();
         /** @var  \Magento\Catalog\Model\Product $product */
         foreach ($products as $product){
             $image = $this->image->init($product, 'image', ['type'=>'image'])->keepAspectRatio(true)->resize('554')->getUrl();
             $ogdata[] = ['property' => 'og:image' , 'content' => $image];
         }
-
+        // move real cat image to last position because this is prefereed by fb
+        if($cat->getImageUrl())  $ogdata[] = ['property' => 'og:image' , 'content' => $cat->getImageUrl()];
         return $ogdata;
     }
 
