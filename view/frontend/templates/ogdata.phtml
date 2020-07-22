@@ -1,0 +1,15 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Frithjof Pfannstiel
+ * Github: https://github.com/frithjof
+ * Date: 22.07.20
+ * Time: 10:55
+ */
+$data = $this->getOgdata();
+foreach ($data as $row){
+    ?>
+    <meta property="<?= $row['property']?>" content="<?= $row['content']?>">
+<?php
+}
+
